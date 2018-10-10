@@ -70,7 +70,8 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
 
         final Dialog dialog;
         Button dialobButton, detail;
-        webView = (WebView) findViewById(R.id.webview);
+
+
 
 
         switch(items[p]){
@@ -89,6 +90,9 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
 
                 detail.setOnClickListener(new View.OnClickListener(){
                     public void onClick(View v) {
+                        dialog.dismiss();
+                        setContentView(R.layout.webview_activity);
+                        webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
                         webView.loadUrl("http://www.google.com");
                     }
@@ -106,6 +110,17 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         dialog.dismiss();
                     }
                 });
+                detail = (Button) dialog.findViewById(R.id.detail);
+
+                detail.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        setContentView(R.layout.webview_activity);
+                        webView = (WebView) findViewById(R.id.webview);
+                        webView.setWebViewClient(new WebViewClient());
+                        webView.loadUrl("http://www.google.com");
+                    }
+                });
                 dialog.show();
                 break;
             case "MI:Fallout":
@@ -116,6 +131,17 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                 dialobButton.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         dialog.dismiss();
+                    }
+                });
+                detail = (Button) dialog.findViewById(R.id.detail);
+
+                detail.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        setContentView(R.layout.webview_activity);
+                        webView = (WebView) findViewById(R.id.webview);
+                        webView.setWebViewClient(new WebViewClient());
+                        webView.loadUrl("http://www.google.com");
                     }
                 });
                 dialog.show();
@@ -142,6 +168,17 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         dialog.dismiss();
                     }
                 });
+                detail = (Button) dialog.findViewById(R.id.detail);
+
+                detail.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        setContentView(R.layout.webview_activity);
+                        webView = (WebView) findViewById(R.id.webview);
+                        webView.setWebViewClient(new WebViewClient());
+                        webView.loadUrl("http://www.google.com");
+                    }
+                });
                 dialog.show();
                 break;
             case "Skyscraper":
@@ -154,6 +191,17 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         dialog.dismiss();
                     }
                 });
+                detail = (Button) dialog.findViewById(R.id.detail);
+
+                detail.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        setContentView(R.layout.webview_activity);
+                        webView = (WebView) findViewById(R.id.webview);
+                        webView.setWebViewClient(new WebViewClient());
+                        webView.loadUrl("http://www.google.com");
+                    }
+                });
                 dialog.show();
                 break;
             default:
@@ -164,6 +212,17 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                 dialobButton.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         dialog.dismiss();
+                    }
+                });
+                detail = (Button) dialog.findViewById(R.id.detail);
+
+                detail.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        setContentView(R.layout.webview_activity);
+                        webView = (WebView) findViewById(R.id.webview);
+                        webView.setWebViewClient(new WebViewClient());
+                        webView.loadUrl("http://www.google.com");
                     }
                 });
                 dialog.show();
