@@ -94,6 +94,7 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         setContentView(R.layout.webview_activity);
                         webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
+                        webView.getSettings().setJavaScriptEnabled(true);
                         webView.loadUrl("http://www.google.com");
                     }
                 });
@@ -118,6 +119,7 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         setContentView(R.layout.webview_activity);
                         webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
+                        webView.getSettings().setJavaScriptEnabled(true);
                         webView.loadUrl("http://www.google.com");
                     }
                 });
@@ -141,6 +143,7 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         setContentView(R.layout.webview_activity);
                         webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
+                        webView.getSettings().setJavaScriptEnabled(true);
                         webView.loadUrl("http://www.google.com");
                     }
                 });
@@ -176,6 +179,7 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         setContentView(R.layout.webview_activity);
                         webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
+                        webView.getSettings().setJavaScriptEnabled(true);
                         webView.loadUrl("http://www.google.com");
                     }
                 });
@@ -199,6 +203,7 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         setContentView(R.layout.webview_activity);
                         webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
+                        webView.getSettings().setJavaScriptEnabled(true);
                         webView.loadUrl("http://www.google.com");
                     }
                 });
@@ -222,6 +227,7 @@ public class MovlistActivity extends Activity implements OnItemClickListener {
                         setContentView(R.layout.webview_activity);
                         webView = (WebView) findViewById(R.id.webview);
                         webView.setWebViewClient(new WebViewClient());
+                        webView.getSettings().setJavaScriptEnabled(true);
                         webView.loadUrl("http://www.google.com");
                     }
                 });
